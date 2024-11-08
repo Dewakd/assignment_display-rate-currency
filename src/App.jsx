@@ -8,7 +8,7 @@ export default function App() {
   
   const apiUrl = import.meta.env.VITE_API_URL;
   const apiKey = import.meta.env.VITE_API_KEY;
-  const symbols = "CAD,IDR,JPY,CHF,EUR,GBP"
+  const symbols = "CAD,IDR,JPY,CHF,EUR,GBP" 
 
   const fetchData = async () => {
     try {
@@ -58,7 +58,7 @@ export default function App() {
       </table>
       <div className='flex flex-col items-center'>
         <h1>Rates are based from 1 {data.base}</h1>
-        <p>this application uses API from <a href="https://currencyfreaks.com/">https://currencyfreaks.com/</a>/</p>
+        <p>this application uses API from <a href="https://currencyfreaks.com/" className='underline'>https://currencyfreaks.com</a></p>
       </div>
     </div>
   )
